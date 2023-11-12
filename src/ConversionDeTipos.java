@@ -11,6 +11,32 @@ public class ConversionDeTipos {
         String logicoStr = "false";
         boolean logicoBoolean = Boolean.parseBoolean(logicoStr);
         System.out.println("logicoBoolean = " + logicoBoolean);
+
+        int otroNumeroInt = 100;
+        System.out.println("otroNumeroInt = " + otroNumeroInt);
+
+        String otroNumeroStr = Integer.toString(otroNumeroInt);
+        System.out.println("otroNumeroStr = " + otroNumeroStr);
+
+        otroNumeroStr = String.valueOf(otroNumeroInt + 10);
+        System.out.println("otroNumeroStr = " + otroNumeroStr);
+
+        double otroRealDouble = 1.23456e2;
+        String otroRealStr = Double.toString(otroRealDouble);
+        System.out.println("otroRealStr = " + otroRealStr);
+
+        otroRealStr = String.valueOf(1.23456e2f);
+        System.out.println("otroRealStr = " + otroRealStr);
+
+
+        int i = 32767; // Tenemos que convertir valores que soporten cada tipo de dato
+        short s = (short) i; // Casting: Forzar conversión
+        System.out.println("s = " + s);
+        long l = i;
+        System.out.println("l = " + l);
+        char b = (char) i;
+        System.out.println("b = " + b);
+        // Conclusión: El casteo solo se puede aplicar a tipos numericos.
     }
 }
 
